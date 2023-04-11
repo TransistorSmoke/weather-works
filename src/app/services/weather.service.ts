@@ -10,10 +10,10 @@ import { environment } from '../../environments/environment';
 export class WeatherService {
   constructor(private http: HttpClient) {}
 
-  getWeather(area: string): Observable<Weather> {
+  getWeather(city: string): Observable<Weather> {
     const options = new HttpParams()
       .set('units', 'metric')
-      .set('q', 'city')
+      .set('q', city)
       .set('appId', environment.apiKey);
 
     return this.http.get<Weather>(environment.apiUrl + 'weather', {

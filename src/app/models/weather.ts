@@ -1,7 +1,7 @@
 export interface Weather {
   weather: WeatherInfo[];
   main: {
-    temperature: number;
+    temp: number;
     pressure: number;
     humidity: number;
   };
@@ -9,7 +9,7 @@ export interface Weather {
     speed: number;
   };
   sys: {
-    area: string;
+    country: string;
   };
   name: string;
 }
