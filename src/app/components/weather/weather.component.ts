@@ -9,8 +9,14 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class WeatherComponent implements OnInit {
   weather!: Weather;
-  areas = ['Sydney', 'Penrith, AU', 'Jordan Springs, AU', 'St Marys, AU'];
-  selectedArea = 'Jordan Springs';
+  places = [
+    'Sydney',
+    'Surry Hills',
+    'Penrith, AU',
+    'Jordan Springs, AU',
+    'St Marys, AU',
+  ];
+  selectedPlaces = 'Jordan Springs';
 
   constructor(private weatherService: WeatherService) {}
 
