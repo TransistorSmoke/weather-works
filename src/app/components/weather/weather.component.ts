@@ -9,6 +9,8 @@ import { WeatherService } from '../../services/weather.service';
 })
 export class WeatherComponent implements OnInit {
   weather!: Weather;
+  areas = ['Sydney', 'Penrith, AU', 'Jordan Springs, AU', 'St Marys, AU'];
+  selectedArea = 'Jordan Springs';
 
   constructor(private weatherService: WeatherService) {}
 
@@ -18,5 +20,9 @@ export class WeatherComponent implements OnInit {
     this.weatherService
       .getWeather(city)
       .subscribe((weather) => (this.weather = weather));
+  }
+
+  checkSelectedValue(value: string) {
+    console.log(`The value is ${value}`);
   }
 }

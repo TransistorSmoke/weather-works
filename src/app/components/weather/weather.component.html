@@ -1,4 +1,4 @@
-<mat-form-field>
+<!-- <mat-form-field>
   <input
     matInput
     placeholder="Enter city"
@@ -6,6 +6,15 @@
     (keydown.enter)="search(cityCtrl.value)"
   />
   <mat-icon matSuffix (click)="search(cityCtrl.value)">search</mat-icon>
+</mat-form-field> -->
+
+<mat-form-field appearance="fill">
+  <mat-label>Select an area</mat-label>
+  <mat-select [(value)]="selectedArea" (selectionChange)="search($event.value)">
+    <mat-option *ngFor="let area of areas" [value]="area">
+      {{ area }}
+    </mat-option>
+  </mat-select>
 </mat-form-field>
 
 <mat-card *ngIf="weather">
