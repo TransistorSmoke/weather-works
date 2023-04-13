@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "weather-works-d4559": {
+      "hosting": {
+        "weather-works": [
+          "weather-works-d4559"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "weather-works-d4559"
+  }
+}
