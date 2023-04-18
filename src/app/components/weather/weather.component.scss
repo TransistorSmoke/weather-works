@@ -6,17 +6,29 @@
   padding-top: 25px;
 }
 
-mat-form-field {
-  width: 20%;
-}
-
 mat-icon {
   cursor: pointer;
 }
 
 mat-card {
-  margin-top: 30px;
+  margin: 20px;
   width: 250px;
+
+  mat-card-content {
+    .weather-detail {
+      display: flex;
+      justify-content: space-between;
+
+      .param-name {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .param-value {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
 
 h1 {
