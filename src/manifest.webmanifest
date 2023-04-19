@@ -1,6 +1,6 @@
 {
-  "name": "weather-works",
-  "short_name": "weather-works",
+  "name": "Work-Home Weather",
+  "short_name": "Weather Works",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
